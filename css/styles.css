@@ -82,12 +82,27 @@ img {
 button {
   cursor: pointer;
 }
-
+/* Basic style */
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  min-width: 320px;
+  max-width: 396px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
+}
+
+/* Tablet screen */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+}
+/* Desktop screen */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 /**
   |============================
@@ -339,6 +354,12 @@ button {
 
 .portfolio {
   padding-bottom: 120px;
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .portfolio {
+    display: block;
+  }
 }
 
 .portfolio-list {

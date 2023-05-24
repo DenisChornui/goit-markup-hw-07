@@ -69,6 +69,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -253,8 +255,12 @@ button {
 
 .hero-st {
   background-color: var(--link-cl);
-  padding-top: 188px;
-  padding-bottom: 188px;
+  /* padding-top: 188px;
+  padding-bottom: 188px; */
+
+  padding-top: 112px;
+  padding-bottom: 112px;
+
 
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero/people-office.jpg);
@@ -321,8 +327,7 @@ button {
 .about-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  row-gap: 72px;
+  gap: 72px 24px;
   margin: auto;
 }
 /* @media only screen and (min-width: 768px) {
@@ -592,7 +597,7 @@ button {
 }
 
 .customers-iteam {
-  width: 168px;
+  width: calc((100% - 16px) / 2);
   height: 88px;
   display: flex;
   justify-content: center;
